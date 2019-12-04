@@ -1,0 +1,10 @@
+num_arr = [3, 1, 6, 9]
+target = 10
+
+
+def two_sum(num_arr, target):
+  for i in range(len(num_arr)):
+    diff = target - num_arr[i]
+    idx = i
+    if num_arr[i] == diff:
+      return idx, i
